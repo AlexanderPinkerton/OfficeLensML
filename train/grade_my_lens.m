@@ -30,10 +30,6 @@ for i = inputImageN0:inputImageN1
 
     %run my_lens
     g = my_lens(f,x);
-%     imshow(g);
-%     pause();
-%     imshow(h);
-%     pause();
 
     %score
     currentScore = 255 - mean ( abs ( int16(g(:)) - int16(h(:)) ) );    
